@@ -1,8 +1,17 @@
-// data "azurerm_cosmosdb_account" "example" {
-//   name                = "${var.team_name}-cosmosdb-account"
-//   resource_group_name = "${var.team_name}-cosmosdb-rg"
-//   location = "${var.region}"
-// }
+terraform {
+  required_providers {
+    azurerm = {
+      source  = "hashicorp/azurerm"
+      version = "=2.46.0"
+    }
+  }
+}
+
+# Configure the Microsoft Azure Provider
+provider "azurerm" {
+  features {}
+}
+
 resource "random_integer" "ri" {
   min = 10000
   max = 99999
