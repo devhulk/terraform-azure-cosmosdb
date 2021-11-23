@@ -9,6 +9,5 @@ variable "region" {
 
 variable "db" {
     description = "Specify mongo or sql"
-    default = ""
 }
 
