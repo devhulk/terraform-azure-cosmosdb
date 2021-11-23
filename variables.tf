@@ -7,12 +7,8 @@ variable "region" {
     default = "East US"
 }
 
-variable "sql" {
-    description = "SQL DB Flag"
+variable "db" {
+    description = "Specify mongo or sql"
     default = ""
 }
 
-variable "mongo" {
-    description = "Mongo DB Flag"
-    default = ""
-}
