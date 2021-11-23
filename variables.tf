@@ -11,3 +11,7 @@ variable "db" {
     description = "Specify mongo or sql"
 }
 
+variable "failover_location" {
+    description = "Replication Region"
+    default = "West US"
+}
